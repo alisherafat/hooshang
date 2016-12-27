@@ -1,0 +1,16 @@
+extends /partials/template/layout.pug
+
+block append scripts
+    script(src='js/guess.js')
+
+block body
+    div(id='messages')
+    .container
+        .row
+            button(class='btn',id='start') Start
+            button(class='btn btn-danger',id='finish') Finish
+        .row
+            button.col-md-3(id='btn1') 1
+            button.col-md-3(id='btn2') 2
+            button.col-md-3(id='btn3') 3
+            button.col-md-3(id='btn4') 4
